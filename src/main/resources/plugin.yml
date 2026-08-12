@@ -1,0 +1,33 @@
+name: PrisonMaden
+version: '1.0.0'
+main: com.prisonmaden.core.PrisonMaden
+api-version: '1.21'
+author: PrisonMaden
+description: Kisisel Prison maden dunyasi, GUI menuler, minyon, canta, rankup ve kazma yukseltme sistemi
+softdepend: [Multiverse-Core]
+
+commands:
+  maden:
+    description: Kisisel maden dunyani yonetir
+    usage: /maden [ayarlar|sil|yenile]
+  madenziyaret:
+    description: Baska bir oyuncunun madenini ziyaret et
+    usage: /madenziyaret <oyuncu>
+  kit:
+    description: Baslangic kitini (kazma) yeniden alir
+    usage: /kit
+  rankup:
+    description: Yeterli paran varsa bir sonraki ranka atlarsin
+    usage: /rankup
+  canta:
+    description: Toplanan cevherleri gorur ve satarsin
+    usage: /canta
+    aliases: [çanta]
+
+permissions:
+  prisonmaden.kullan:
+    description: Maden komutlarini kullanabilir
+    default: true
+  prisonmaden.admin:
+    description: Baska oyuncularin madenini silebilir
+    default: op
