@@ -1,0 +1,9 @@
+name: SkriptVeri
+version: '${project.version}'
+main: com.example.skriptveri.SkriptVeriPlugin
+api-version: '1.21'
+author: Sen
+description: Skript uzerinden veri tanimla, PlaceholderAPI ile goster.
+
+depend: [Skript]
+softdepend: [PlaceholderAPI]
